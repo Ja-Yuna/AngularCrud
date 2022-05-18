@@ -1,0 +1,16 @@
+
+<div class="container">
+    <h1>Cadastre seus dados</h1>
+    <form #f="ngForm" (ngSubmit)="saveContato(f.value)">
+        <input type="text" ngModel name="nome" placeholder="Informe nome" />
+        <input type="text" ngModel name="CRM" placeholder="Informe o crm" />
+        <input type="fone" ngModel name="Telefone" placeholder="Informe o telefone" />
+        <input type="text" ngModel name="Dias" placeholder="Informe os dias de atendimento" />
+        <input type="text" ngModel name="especialidade" placeholder="Informe especialidade" />
+        <div class="botoes">
+            <button class="btsalva">Salvar</button>
+            <button class="btcancela">Cancelar</button>
+        </div>
+    </form>
+    <label>{{ msg }}</label>
+</div>

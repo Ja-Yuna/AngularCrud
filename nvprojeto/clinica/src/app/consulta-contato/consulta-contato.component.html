@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>
+        Consulta de contatos
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>CRM</th>
+                <th>Telefone</th>
+                <th>Atendimento</th>
+                <th>Especialidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contato of contatos">
+                <td>{{ contato.id}}</td>
+                <td>{{ contato.nome}}</td>
+                <td>{{ contato.crm}}</td>
+                <td>{{ contato.telefone}}</td>
+                <td>{{ contato.dias}}</td>
+                <td>{{ contato.especialidade}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
